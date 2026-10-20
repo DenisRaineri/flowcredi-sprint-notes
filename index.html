@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <script>
+    (function () {
+      var path = location.pathname;
+      var last = path.split("/").pop() || "";
+      var base = (!path.endsWith("/") && last.indexOf(".") === -1)
+        ? path.replace(/\/*$/, "") + "/"
+        : path.replace(/[^/]*$/, "");
+      document.write('<base href="' + base + '">');
+    })();
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Release Notes · Sprint de Tecnologia · Flowcredi</title>
@@ -475,28 +485,28 @@
       </div>
       <div class="media">
         <div class="gallery">
-          <figure class="shot" data-full="cadastro-completo 1.jpeg">
-            <img src="cadastro-completo 1.jpeg" alt="Confirmação de identidade no cadastro completo" />
+          <figure class="shot" data-full="cadastro-completo%201.jpeg">
+            <img src="cadastro-completo%201.jpeg" alt="Confirmação de identidade no cadastro completo" />
             <figcaption>1. Cliente abre o link e confirma CPF + data de nascimento</figcaption>
           </figure>
-          <figure class="shot" data-full="cadastro-completo 2.jpeg">
-            <img src="cadastro-completo 2.jpeg" alt="Envio de código por e-mail" />
+          <figure class="shot" data-full="cadastro-completo%202.jpeg">
+            <img src="cadastro-completo%202.jpeg" alt="Envio de código por e-mail" />
             <figcaption>2. Pedido de código de acesso por e-mail</figcaption>
           </figure>
-          <figure class="shot" data-full="cadastro-completo 3.jpeg">
-            <img src="cadastro-completo 3.jpeg" alt="E-mail com código de acesso" />
+          <figure class="shot" data-full="cadastro-completo%203.jpeg">
+            <img src="cadastro-completo%203.jpeg" alt="E-mail com código de acesso" />
             <figcaption>3. E-mail com o código, válido por 10 minutos</figcaption>
           </figure>
-          <figure class="shot" data-full="cadastro-completo 4.jpeg">
-            <img src="cadastro-completo 4.jpeg" alt="Carregamento da proposta" />
+          <figure class="shot" data-full="cadastro-completo%204.jpeg">
+            <img src="cadastro-completo%204.jpeg" alt="Carregamento da proposta" />
             <figcaption>4. A proposta é carregada no Flowcredi</figcaption>
           </figure>
-          <figure class="shot wide" data-full="cadastro-completo 5.jpeg">
-            <img src="cadastro-completo 5.jpeg" alt="Formulário só com os dados que faltam" />
+          <figure class="shot wide" data-full="cadastro-completo%205.jpeg">
+            <img src="cadastro-completo%205.jpeg" alt="Formulário só com os dados que faltam" />
             <figcaption>5. Só aparecem as informações que ainda faltam</figcaption>
           </figure>
-          <figure class="shot" data-full="cadastro-completo 6.jpeg">
-            <img src="cadastro-completo 6.jpeg" alt="Proposta completa" />
+          <figure class="shot" data-full="cadastro-completo%206.jpeg">
+            <img src="cadastro-completo%206.jpeg" alt="Proposta completa" />
             <figcaption>6. Cadastro concluído — próximo passo: documentos</figcaption>
           </figure>
         </div>
